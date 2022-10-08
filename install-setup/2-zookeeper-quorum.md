@@ -1,5 +1,5 @@
 # ZooKeeper setup on Kafka2 and Kafka3 servers
-Follow the same steps on kafka2 and kafka3 servers which we followed on kafka1 server in previous file [[install-setup/1-zookeeper-single.md]]
+Follow the same steps on kafka2 and kafka3 servers which we followed on kafka1 server previously: [zookeeper-single](install-setup/1-zookeeper-single.md)
 
 ### Basic connection testing before start the Quorum
 > Kafka1:

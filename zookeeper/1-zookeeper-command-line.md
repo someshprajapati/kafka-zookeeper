@@ -215,3 +215,5 @@ numChildren = 0
 
 rmr /node-to-watch
 ```
+
+Next: [Four-letter-word-commands](zookeeper/2-four-letter-word-commands.md)
