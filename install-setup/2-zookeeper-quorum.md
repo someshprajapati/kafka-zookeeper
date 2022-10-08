@@ -164,7 +164,7 @@ Mode: follower
 Node count: 4
 ```
 
-### observe the logs - need to do this on every machine
+### Observe the logs - need to do this on every machine
 ```
 cat /home/ubuntu/kafka/logs/zookeeper.out | head -100
 nc -vz localhost 2181
