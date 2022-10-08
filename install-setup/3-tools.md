@@ -6,7 +6,7 @@
 ### Add Docker’s official GPG key:
 `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`
 
-### set up the stable repository.
+### Set up the stable repository.
 ```
 sudo add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
@@ -14,18 +14,18 @@ sudo add-apt-repository \
    stable"
 ```
 
-### install docker
+### Install docker
 `sudo apt-get update`
 
 `sudo apt-get install -y docker-ce docker-compose`
 
-### give ubuntu permissions to execute docker
+### Give ubuntu permissions to execute docker
 `sudo usermod -aG docker $(whoami)`
 
-### log out
+### Logout
 `exit`
 
-### log back in and make sure docker is working
+### Log back in and make sure docker is working
 `docker run hello-world`
 
 ### Add hosts entries (mocking DNS) - put relevant IPs here
