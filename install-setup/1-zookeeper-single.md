@@ -54,7 +54,7 @@ echo "192.168.233.131 kafka1
 192.168.233.133 zookeeper3" | sudo tee --append /etc/hosts
 ```
 
-### download Zookeeper and Kafka. Recommended is latest Kafka (0.10.2.1)
+### Download Zookeeper and Kafka. Recommended is latest Kafka (0.10.2.1)
 ```
 wget https://archive.apache.org/dist/kafka/0.10.2.1/kafka_2.12-0.10.2.1.tgz
 tar -xvzf kafka_2.12-0.10.2.1.tgz
@@ -91,7 +91,7 @@ ls /
 [zookeeper]
 ```
 
-### demonstrate the use of a 4 letter word
+### Demonstrate the use of a 4 letter word
 `echo "ruok" | nc localhost 2181 ; echo`
 > Results:
 imok
@@ -105,13 +105,13 @@ sudo chmod +x /etc/init.d/zookeeper
 sudo chown root:root /etc/init.d/zookeeper
 ```
 
-### you can safely ignore the warning
+### Safely ignore the warning if any
 `sudo update-rc.d zookeeper defaults`
 
-### stop zookeeper
+### Stop zookeeper
 `sudo service zookeeper stop`
 
-### verify it's stopped
+### Verify it's stopped
 `nc -vz localhost 2181`
 
 > Results:
@@ -128,10 +128,10 @@ nc: connect to localhost port 2181 (tcp) failed: Connection refused
 ubuntu@kafka1:~/kafka$ echo "ruok" | nc localhost 2181 ; echo
 ```
 
-### start zookeeper
+### Start zookeeper
 `sudo service zookeeper start`
 
-### verify it's started
+### Verify it's started
 `nc -vz localhost 2181`
 `echo "ruok" | nc localhost 2181 ; echo`
 
@@ -160,5 +160,17 @@ ubuntu@kafka1:~/kafka$ echo "ruok" | nc localhost 2181 ; echo
 imok
 ```
 
-### check the logs
+### Check the logs
 `cat logs/zookeeper.out`
+
+> Results:
+```
+ubuntu@kafka1:~/kafka$ cat logs/zookeeper.out
+[2022-10-08 10:53:05,411] INFO Reading configuration from: /home/ubuntu/kafka/config/zookeeper.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+.
+.
+.
+[2022-10-08 10:53:21,254] INFO Accepted socket connection from /127.0.0.1:37904 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2022-10-08 10:53:21,255] INFO Processing ruok command from /127.0.0.1:37904 (org.apache.zookeeper.server.NIOServerCnxn)
+[2022-10-08 10:53:21,258] INFO Closed socket connection for client /127.0.0.1:37904 (no session established for client) (org.apache.zookeeper.server.NIOServerCnxn)
+```
