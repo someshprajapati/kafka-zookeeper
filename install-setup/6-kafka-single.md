@@ -10,7 +10,7 @@ echo "* hard nofile 100000
 ```
 sudo reboot
 sudo service zookeeper start
-sudo mkdir /data/kafka`
+sudo mkdir /data/kafka
 sudo chown -R ubuntu:ubuntu /data/kafka
 ```
 

@@ -1,5 +1,3 @@
-# Make sure you have done the steps from 5 on all machines
-## We repeat the steps from 6
 ## DO THE SAME FOR BROKER 2 and 3
 
 ## Add file limits configs - allow to open 100,000 file descriptors
@@ -12,7 +10,7 @@ echo "* hard nofile 100000
 ```
 sudo reboot
 sudo service zookeeper start
-sudo mkdir /data/kafka`
+sudo mkdir /data/kafka
 sudo chown -R ubuntu:ubuntu /data/kafka
 ```
 
@@ -100,7 +98,7 @@ Updated config for topic "__consumer_offsets".
 ```
 
 
-## read the topic on broker 1 by connecting to broker 2!
+## Read the topic on broker 1 by connecting to broker 2!
 `bin/kafka-console-consumer.sh --bootstrap-server kafka2:9092 --topic first_topic --from-beginning`
 
 > Results:
