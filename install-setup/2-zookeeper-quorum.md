@@ -1,4 +1,4 @@
-### ZooKeeper setup on Kafka2 and Kafka3 servers
+# ZooKeeper setup on Kafka2 and Kafka3 servers
 Follow the same steps on kafka2 and kafka3 servers which we followed on kafka1 server in previous file [[install-setup/1-zookeeper-single.md]]
 
 ### Basic connection testing before start the Quorum
@@ -49,6 +49,7 @@ Connection to zookeeper3 2181 port [tcp/*] succeeded!
 
 ### Create data dictionary for zookeeper in all servers
 `sudo mkdir -p /data/zookeeper`
+
 `sudo chown -R ubuntu:ubuntu /data/`
 
 ### Declare the server's identity
@@ -99,10 +100,12 @@ server.3=zookeeper3:2888:3888
 
 ### Restart the zookeeper service
 `sudo service zookeeper stop`
+
 `sudo service zookeeper start`
 
 ### Verify if the Quorum is working, check on any server
 `echo "ruok" | nc zookeeper1 2181 ; echo`
+
 `echo "stat" | nc zookeeper1 2181 ; echo`
 
 > Results:
