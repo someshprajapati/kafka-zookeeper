@@ -180,3 +180,5 @@ bin/zookeeper-shell.sh zookeeper1:2181
 bin/zookeeper-shell.sh zookeeper2:2181
 bin/zookeeper-shell.sh zookeeper3:2181
 ```
+
+Next: [Four-letter-word-commands](2-four-letter-word-commands.md)

@@ -68,7 +68,7 @@ cd kafka/
 
 `bin/zookeeper-server-start.sh config/zookeeper.properties`
 
-NOTE: binding to port 2181 -> you're good. Ctrl+C to exit
+> NOTE: binding to port 2181 -> you're good. Ctrl+C to exit
 
 ## Testing Zookeeper install
 ### Start Zookeeper in the background
@@ -174,3 +174,5 @@ ubuntu@kafka1:~/kafka$ cat logs/zookeeper.out
 [2022-10-08 10:53:21,255] INFO Processing ruok command from /127.0.0.1:37904 (org.apache.zookeeper.server.NIOServerCnxn)
 [2022-10-08 10:53:21,258] INFO Closed socket connection for client /127.0.0.1:37904 (no session established for client) (org.apache.zookeeper.server.NIOServerCnxn)
 ```
+
+Next: [Zookeeper-Quorum](2-zookeeper-quorum.md)
