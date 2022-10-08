@@ -1,5 +1,3 @@
-#!/bin/bash
-
 ### System Info
 ```
 ubuntu@kafka1:~$ uname -a
