@@ -91,4 +91,4 @@ __consumer_offsets
 first_topic
 ```
 
-Next: [Kafka multi node cluster](7-kafka-cluster.md)
+Next: [Kafka Multi node cluster](7-kafka-cluster.md)
