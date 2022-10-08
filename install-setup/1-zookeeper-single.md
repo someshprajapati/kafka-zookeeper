@@ -175,4 +175,4 @@ ubuntu@kafka1:~/kafka$ cat logs/zookeeper.out
 [2022-10-08 10:53:21,258] INFO Closed socket connection for client /127.0.0.1:37904 (no session established for client) (org.apache.zookeeper.server.NIOServerCnxn)
 ```
 
-Next: [Zookeeper-Quorum](2-zookeeper-quorum.md)
+Next: [Zookeeper Quorum](2-zookeeper-quorum.md)
