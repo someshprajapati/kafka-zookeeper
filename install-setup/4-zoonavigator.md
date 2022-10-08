@@ -5,4 +5,4 @@
 ### Copy the zookeeper/zoonavigator-docker-compose.yml file and run it
 `docker-compose -f zoonavigator-docker-compose.yml up -d`
 
-Next: [Kafka EBS](4-kafka-ebs.md)
+Next: [Kafka EBS](5-kafka-ebs.md)
