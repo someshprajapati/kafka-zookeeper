@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  kafka-manager:
+    image: qnib/plain-kafka-manager
+    ports:
+      - "9000:9000"
+    environment:
+      ZOOKEEPER_HOSTS: "zookeeper1:2181,zookeeper2:2181,zookeeper3:2181"
+      APPLICATION_SECRET: change_me_please
+    restart: always
