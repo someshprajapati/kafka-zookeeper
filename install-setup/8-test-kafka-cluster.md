@@ -105,5 +105,33 @@ __consumer_offsets
 first_topic
 second_topic
 ```
+### Verify the file system, Check `second_topic` created using the replication-factor 3 and partitions 3!
+```
+ubuntu@kafka1:~/kafka$ ls -l /data/kafka/
+total 240
+-rw-r--r-- 1 root   root      4 Oct  9 11:32 cleaner-offset-checkpoint
+drwxr-xr-x 2 root   root   4096 Oct  9 11:02 __consumer_offsets-0
+drwxr-xr-x 2 root   root   4096 Oct  9 11:02 __consumer_offsets-1
+.
+.
+.
+drwxr-xr-x 2 root   root   4096 Oct  9 11:02 __consumer_offsets-9
+drwxr-xr-x 2 root   root   4096 Oct  9 11:02 first_topic-0
+drwxr-xr-x 2 root   root   4096 Oct  9 11:02 first_topic-1
+drwxr-xr-x 2 root   root   4096 Oct  9 11:02 first_topic-2
+-rw-rw-r-- 1 ubuntu ubuntu   54 Oct  8 17:19 meta.properties
+-rw-r--r-- 1 root   root   1294 Oct  9 11:37 recovery-point-offset-checkpoint
+-rw-r--r-- 1 root   root   1297 Oct  9 11:37 replication-offset-checkpoint
+drwxr-xr-x 2 root   root   4096 Oct  9 11:23 second_topic-0
+drwxr-xr-x 2 root   root   4096 Oct  9 11:23 second_topic-1
+drwxr-xr-x 2 root   root   4096 Oct  9 11:23 second_topic-2
+
+
+ubuntu@kafka1:~/kafka$ ls -l /data/kafka/second_topic-0/
+total 4
+-rw-r--r-- 1 root root 10485760 Oct  9 11:23 00000000000000000000.index
+-rw-r--r-- 1 root root       46 Oct  9 11:25 00000000000000000000.log
+-rw-r--r-- 1 root root 10485756 Oct  9 11:23 00000000000000000000.timeindex
+```
 
 Next: [Kafka Manager](9-tools-kafka-manager.md)
