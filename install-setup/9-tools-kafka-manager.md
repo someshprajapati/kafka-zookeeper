@@ -102,9 +102,9 @@ Kafka setup testing
 
 > Image Links:
 
-![Kafka Manager UI](images/0-Kafka Manager UI.png)
+[Kafka Manager UI](images/0-Kafka Manager UI.png)
 
-[Add Cluster](images/1-Add Cluster.md)
+[Add Cluster](images/1-Add Cluster.png)
 
 [Cluster Info](images/2-Cluster Info.png)
 
