@@ -1,4 +1,4 @@
-### We can create topics with replication-factor 3 now!
+### We can create topics with replication-factor 3 now
 `bin/kafka-topics.sh --zookeeper zookeeper1:2181,zookeeper2:2181,zookeeper3:2181/kafka --create --topic second_topic --replication-factor 3 --partitions 3`
 
 > Results:
@@ -8,7 +8,7 @@ WARNING: Due to limitations in metric names, topics with a period ('.') or under
 Created topic "second_topic".
 ```
 
-### We can publish data to Kafka using the bootstrap server list!
+### We can publish data to Kafka using the bootstrap server list
 `bin/kafka-console-producer.sh --broker-list kafka1:9092,kafka2:9092,kafka3:9092 --topic second_topic`
 
 > Results:
@@ -22,7 +22,7 @@ it's working
 ```
 
 
-### We can read data using any broker too!
+### We can read data using any broker too
 `bin/kafka-console-consumer.sh --bootstrap-server kafka1:9092,kafka2:9092,kafka3:9092 --topic second_topic --from-beginning`
 
 > Results:
@@ -35,7 +35,7 @@ Kafka setup testing
 ^CProcessed a total of 4 messages
 ```
 
-### We can create another topics with replication-factor 3 now!
+### We can create another topics with replication-factor 3 now
 `bin/kafka-topics.sh --zookeeper zookeeper1:2181,zookeeper2:2181,zookeeper3:2181/kafka --create --topic third_topic --replication-factor 3 --partitions 3`
 
 > Results:
@@ -71,7 +71,7 @@ ya, it's working
 ```
 
 
-### We can read data using any broker too!
+### We can read data using any broker too
 `bin/kafka-console-consumer.sh --bootstrap-server kafka1:9092,kafka2:9092,kafka3:9092 --topic third_topic --from-beginning`
 
 > Results:
@@ -85,7 +85,7 @@ hope it will work
 ```
 
 
-### Let's delete `third_topic` topic!
+### Let's delete `third_topic` topic
 `bin/kafka-topics.sh --zookeeper zookeeper1:2181,zookeeper2:2181,zookeeper3:2181/kafka --delete --topic third_topic`
 
 > Results:
@@ -95,7 +95,7 @@ Topic third_topic is marked for deletion.
 Note: This will have no impact if delete.topic.enable is not set to true.
 ```
 
-### Verify if topic `third_topic` deleted successfully!
+### Verify if topic `third_topic` deleted successfully
 bin/kafka-topics.sh --zookeeper zookeeper1:2181,zookeeper2:2181,zookeeper3:2181/kafka --list
 
 > Results:
@@ -105,7 +105,7 @@ __consumer_offsets
 first_topic
 second_topic
 ```
-### Verify the file system, Check `second_topic` created using the replication-factor 3 and partitions 3!
+### Verify the file system, Check `second_topic` created using the replication-factor 3 and partitions 3
 ```
 ubuntu@kafka1:~/kafka$ ls -l /data/kafka/
 total 240
