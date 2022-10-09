@@ -1,4 +1,4 @@
-## Make sure you open port 9000 on the security group
+## Make sure you open port `9000` on the security group
 
 ### Make sure you can access the zookeeper endpoints from kafka-manager server
 ```
@@ -85,7 +85,7 @@ tcp6       0      0 :::22                   :::*                    LISTEN      
 ```
 
 ### Open Kafka Manager in browser:
-`http://192.168.233.135:9000/`
+[Kafka Manager UI](http://192.168.233.135:9000/)
 
 
 ### Fix the red error showed in [Topic List](images/3-Topic List.png) using below:
@@ -102,17 +102,17 @@ Kafka setup testing
 
 > Image Links:
 
-[Kafka Manager UI](0-Kafka Manager UI.png)
+![Kafka Manager UI](images/0-Kafka Manager UI.png)
 
-[Add Cluster](1-Add Cluster.png)
+[Add Cluster](images/1-Add Cluster.md)
 
-[Cluster Info](2-Cluster Info.png)
+[Cluster Info](images/2-Cluster Info.png)
 
-[Topic List](3-Topic List.png)
+[Topic List](images/3-Topic List.png)
 
-[Topic View](4-Topic View.png)
+[Topic View](images/4-Topic View.png)
 
-[Create Topic from UI](5-Create Topic from UI.png)
+[Create Topic from UI](images/5-Create Topic from UI.png)
 
 
 Next: [Kafka Manager Resiliency](10-test-kafka-resiliency.md)
