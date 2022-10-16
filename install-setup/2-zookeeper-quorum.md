@@ -47,7 +47,7 @@ ubuntu@kafka3:~/kafka$ nc -vz zookeeper3 2181
 Connection to zookeeper3 2181 port [tcp/*] succeeded!
 ```
 
-### Create data dictionary for zookeeper in all servers
+### Create data directory for zookeeper in all servers
 `sudo mkdir -p /data/zookeeper`
 
 `sudo chown -R ubuntu:ubuntu /data/`
