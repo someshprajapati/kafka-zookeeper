@@ -73,12 +73,15 @@ cd kafka/
 ## Testing Zookeeper install
 ### Start Zookeeper in the background
 `bin/zookeeper-server-start.sh -daemon config/zookeeper.properties`
+
 `bin/zookeeper-shell.sh localhost:2181`
+
 `ls /`
 
 > Results:
 ```
 ubuntu@kafka1:~/kafka$ bin/zookeeper-server-start.sh -daemon config/zookeeper.properties
+
 ubuntu@kafka1:~/kafka$ bin/zookeeper-shell.sh localhost:2181
 Connecting to localhost:2181
 Welcome to ZooKeeper!
