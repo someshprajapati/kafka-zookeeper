@@ -4,13 +4,13 @@
  
 We will install the ZooKeeper first and then followed by the Kafka.
  
-1. Install and configure the ZooKeeper in single mode.
+1. Install and configure the ZooKeeper in standalone mode.
 
 2. Install and configure the ZooKeeper in cluster mode.
 
 3. Install the ZooKeeper UI.
 
-4. Install and configure the Kafka in single mode.
+4. Install and configure the Kafka in standalone mode.
 
 5. Install and configure the Kafka in cluster mode.
 
